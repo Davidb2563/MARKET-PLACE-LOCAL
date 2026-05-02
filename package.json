@@ -1,0 +1,23 @@
+{
+  "name": "market-place-local",
+  "version": "1.0.0",
+  "description": "Proyecto Academico",
+  "homepage": "https://github.com/Davidb2563/MARKET-PLACE-LOCAL#readme",
+  "bugs": {
+    "url": "https://github.com/Davidb2563/MARKET-PLACE-LOCAL/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidb2563/MARKET-PLACE-LOCAL.git"
+  },
+  "license": "ISC",
+  "author": "David Buelvas",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
