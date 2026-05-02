@@ -1,5 +1,5 @@
 {
-  "name": "market-place-local",
+  "name": "backend-market-place-local",
   "version": "1.0.0",
   "description": "Proyecto Academico",
   "homepage": "https://github.com/Davidb2563/MARKET-PLACE-LOCAL#readme",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Davidb2563/MARKET-PLACE-LOCAL.git"
   },
   "license": "ISC",
-  "author": "David Buelvas",
+  "author": "David,Santiago,Carolina,Edwar",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
