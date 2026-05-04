@@ -1,0 +1,130 @@
+.chat1 {
+  --primary: #007bff;
+  --bg: #f4f7f6;
+  --text: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.chat1 .btn-open {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  z-index: 2500;
+}
+
+.chat1 .chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 3000;
+  transition: transform 0.35s ease, opacity 0.25s ease;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.chat1 .chat.hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chat1 .chat header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat1 .chat .chat-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fdfdfd;
+}
+
+.chat1 .chat .message {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 80%;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  word-wrap: break-word;
+}
+
+.chat1 .chat .user-message {
+  margin-left: auto;
+  background-color: var(--primary);
+  color: white;
+}
+
+.chat1 .chat .bot-message {
+  margin-right: auto;
+  background-color: #e9ecef;
+  color: var(--text);
+}
+
+.chat1 .chat .input-area {
+  padding: 12px;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.chat1 .chat .input-area input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 22px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.chat1 .chat .input-area input[type="text"]:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.06);
+}
+
+.chat1 .chat .input-area button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat1 .chat .chat-area::-webkit-scrollbar { width: 6px; }
+.chat1 .chat .chat-area::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+@media (max-width: 480px) {
+  .chat1 .chat {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,92 @@
+.chatwsp1 {
+  --primary: #25d366;
+  --text: #ffffff;
+  --btn-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chatwsp1 #iconwsp {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.chatwsp1 .btn-wsp {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: var(--btn-size);
+  min-width: var(--btn-size);
+  width: var(--btn-size);
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              padding 0.4s ease,
+              background-color 0.3s ease,
+              transform 0.12s ease;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.18);
+}
+
+.chatwsp1 .btn-wsp .stext {
+  max-width: 0;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 0;
+  transition: opacity 0.3s ease, max-width 0.4s ease, margin-left 0.4s ease;
+  color: var(--text);
+}
+
+.chatwsp1 .btn-wsp:hover,
+.chatwsp1 .btn-wsp:focus {
+  width: 160px;
+  padding: 0 15px;
+  justify-content: flex-start;
+  outline: none;
+}
+
+.chatwsp1 .btn-wsp:hover .stext,
+.chatwsp1 .btn-wsp:focus .stext {
+  max-width: 120px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.chatwsp1 .btn-wsp:active {
+  transform: scale(0.96);
+}
+
+.chatwsp1 .btn-wsp:focus-visible {
+  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
+}
+
+@media (max-width: 480px) {
+  .chatwsp1 .btn-wsp {
+    top: auto;
+    bottom: 90px;
+    right: 16px;
+    height: 42px;
+    min-width: 42px;
+  }
+  .chatwsp1 .btn-wsp:hover {
+    width: 140px;
+  }
+}
+
+.chatwsp1 .btn-wsp img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  filter: none; 
+}

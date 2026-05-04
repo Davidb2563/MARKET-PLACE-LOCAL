@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styleschat.css">
+  <title>Chat Pro - WebSockets</title>
+</head>
+<body>
+  <!-- Botón -->
+  <button id="chat-toggle" class="btn-open">💬 Abrir Chat</button>
+
+  <!-- Ventana de chat -->
+  <div id="chat-window" class="chat hidden">
+    <header>
+      <h2 style="margin:0; font-size: 1.2rem;">Chat Online</h2>
+      <span id="chat-close" style="cursor:pointer; float:right; margin-top:-20px;">✕</span>
+    </header>
+
+    <div id="chat">
+      <!-- Mensaje inicial del bot -->
+      <div class="message bot-message">🤖 ¡Hola! ¿En qué puedo ayudarte?</div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="msgInput" placeholder="Escribe un mensaje..." autocomplete="off" />
+      <button id="sendBtn">Enviar</button>
+    </div>
+  </div>
+
+</body>
+
+
+<script src="script1chat.js"></script>
+<script src="script2chat.js"></script>
+<script src="scriptchat3.js"></script>
+</html>
