@@ -13,11 +13,16 @@
   "license": "ISC",
   "author": "David,Santiago,Carolina,Edwar",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "npm run test"
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "set NODE_ENV=test&& node --test --experimental-test-coverage"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.21.0"
   }
 }
